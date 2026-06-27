@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'com.mohamed.expenseguard'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.mohamed.expenseguard'
+        minSdk 26
+        targetSdk 35
+        versionCode 6
+        versionName '1.6'
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.7.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.android.gms:play-services-auth:21.3.0'
+    implementation 'androidx.core:core:1.15.0'
+}
